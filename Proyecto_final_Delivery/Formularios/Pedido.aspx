@@ -4,6 +4,20 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            top: 451px;
+            left: 401px;
+            position: absolute;
+            height: 26px;
+            width: 69px;
+        }
+        .auto-style3 {
+            top: 450px;
+            left: 652px;
+            position: absolute;
+            height: 26px;
+            width: 73px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,7 +25,7 @@
         <br />
         REGISTRO DE PEDIDOS</p>
     <asp:Panel ID="Panel1" runat="server" Height="605px">
-        <asp:Label ID="Label1" runat="server" Text="Id Pedido" style="top: 138px; left: 23px; position: absolute; height: 19px; width: 63px"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="ID" style="top: 138px; left: 23px; position: absolute; height: 19px; width: 63px"></asp:Label>
         <asp:Label ID="Label2" runat="server" style="top: 167px; left: 26px; position: absolute; height: 19px; width: 34px" Text="Numero"></asp:Label>
         <asp:Label ID="Label3" runat="server" style="top: 196px; left: 24px; position: absolute; height: 19px; width: 96px" Text="Fecha Creacion"></asp:Label>
         <asp:Label ID="Label4" runat="server" style="top: 224px; left: 23px; position: absolute; height: 19px; width: 95px" Text="Hora Creacion"></asp:Label>
@@ -34,12 +48,13 @@
         <asp:TextBox ID="TextBox10" runat="server" style="top: 412px; left: 164px; position: absolute; height: 15px; width: 104px"></asp:TextBox>
         <asp:TextBox ID="TextBox11" runat="server" style="top: 444px; left: 163px; position: absolute; height: 14px; width: 106px"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" style="top: 451px; left: 308px; position: absolute; height: 26px; width: 66px" Text="Agregar" OnClick="Button1_Click" />
-        <asp:Button ID="Button2" runat="server" style="top: 451px; left: 396px; position: absolute; height: 26px; width: 69px" Text="Actualizar" OnClick="Button2_Click" />
-        <asp:Button ID="Button3" runat="server" style="top: 450px; left: 489px; position: absolute; height: 26px; width: 73px" Text="Eliminar" OnClick="Button3_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Actualizar" OnClick="Button2_Click" CssClass="auto-style2" />
+        <asp:Button ID="Button3" runat="server" Text="Eliminar" OnClick="Button3_Click" CssClass="auto-style3" />
         <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" style="top: 196px; left: 279px; position: absolute; height: 20px; width: 96px" Text="Selec fecha" />
-        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="top: 214px; left: 279px; position: absolute; width: 97px; bottom: 228px" Text="Selec hora" />
         <asp:Calendar ID="Calendar1" runat="server" style="top: 134px; left: 405px; position: absolute; height: 164px; width: 153px" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
         <asp:GridView ID="tabla" runat="server" style="top: 500px; left: 35px; position: absolute; height: 153px; width: 537px">
         </asp:GridView>
+        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="top: 214px; left: 279px; position: absolute; width: 97px; bottom: 228px" Text="Selec hora" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </asp:Panel>
 </asp:Content>
