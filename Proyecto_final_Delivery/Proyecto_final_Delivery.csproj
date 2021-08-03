@@ -1,0 +1,300 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{305DE0E2-660E-407C-9923-747B3D1113F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proyecto_final_Delivery</RootNamespace>
+    <AssemblyName>Proyecto_final_Delivery</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Formularios\Barrio.aspx" />
+    <Content Include="Formularios\Barrio_Por_Calle.aspx" />
+    <Content Include="Formularios\Calle.aspx" />
+    <Content Include="Formularios\DETALLE_PEDIDO.aspx" />
+    <Content Include="Formularios\Eatado_Pedido.aspx" />
+    <Content Include="Formularios\ESTADO_FACTURA.aspx" />
+    <Content Include="Formularios\Estado_Personal_Entrega.aspx" />
+    <Content Include="Formularios\FACTURA.aspx" />
+    <Content Include="Formularios\Localidad.aspx" />
+    <Content Include="Formularios\Localidad_Por_Barrio.aspx" />
+    <Content Include="Formularios\Pedido.aspx" />
+    <Content Include="Formularios\Personal_Entrega.aspx" />
+    <Content Include="Formularios\PIZZA.aspx" />
+    <Content Include="Formularios\tamaño_pizza.aspx" />
+    <Content Include="Formularios\Tipo_pizza.aspx" />
+    <Content Include="Formularios\Tipo_Vehiculo.aspx" />
+    <Content Include="Formularios\usuario %282%29.png" />
+    <Content Include="Formularios\VARIEDAD_PIZZA.aspx" />
+    <Content Include="Formularios\Vehiculo.aspx" />
+    <Content Include="Formularios\Login.aspx" />
+    <Content Include="Formularios\WebForm1.aspx" />
+    <Content Include="Formularios\MENU.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Barrio.aspx.cs">
+      <DependentUpon>Barrio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio.aspx.designer.cs">
+      <DependentUpon>Barrio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Barrio_Por_Calle.aspx.cs">
+      <DependentUpon>Barrio_Por_Calle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Barrio_Por_Calle.aspx.designer.cs">
+      <DependentUpon>Barrio_Por_Calle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Calle.aspx.cs">
+      <DependentUpon>Calle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Calle.aspx.designer.cs">
+      <DependentUpon>Calle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DETALLE_PEDIDO.aspx.cs">
+      <DependentUpon>DETALLE_PEDIDO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\DETALLE_PEDIDO.aspx.designer.cs">
+      <DependentUpon>DETALLE_PEDIDO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eatado_Pedido.aspx.cs">
+      <DependentUpon>Eatado_Pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eatado_Pedido.aspx.designer.cs">
+      <DependentUpon>Eatado_Pedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ESTADO_FACTURA.aspx.cs">
+      <DependentUpon>ESTADO_FACTURA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\ESTADO_FACTURA.aspx.designer.cs">
+      <DependentUpon>ESTADO_FACTURA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estado_Personal_Entrega.aspx.cs">
+      <DependentUpon>Estado_Personal_Entrega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estado_Personal_Entrega.aspx.designer.cs">
+      <DependentUpon>Estado_Personal_Entrega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FACTURA.aspx.cs">
+      <DependentUpon>FACTURA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FACTURA.aspx.designer.cs">
+      <DependentUpon>FACTURA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Localidad.aspx.cs">
+      <DependentUpon>Localidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Localidad.aspx.designer.cs">
+      <DependentUpon>Localidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Localidad_Por_Barrio.aspx.cs">
+      <DependentUpon>Localidad_Por_Barrio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Localidad_Por_Barrio.aspx.designer.cs">
+      <DependentUpon>Localidad_Por_Barrio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Pedido.aspx.cs">
+      <DependentUpon>Pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Pedido.aspx.designer.cs">
+      <DependentUpon>Pedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Personal_Entrega.aspx.cs">
+      <DependentUpon>Personal_Entrega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Personal_Entrega.aspx.designer.cs">
+      <DependentUpon>Personal_Entrega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PIZZA.aspx.cs">
+      <DependentUpon>PIZZA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\PIZZA.aspx.designer.cs">
+      <DependentUpon>PIZZA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tamaño_pizza.aspx.cs">
+      <DependentUpon>tamaño_pizza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\tamaño_pizza.aspx.designer.cs">
+      <DependentUpon>tamaño_pizza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_pizza.aspx.cs">
+      <DependentUpon>Tipo_pizza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_pizza.aspx.designer.cs">
+      <DependentUpon>Tipo_pizza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Vehiculo.aspx.cs">
+      <DependentUpon>Tipo_Vehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo_Vehiculo.aspx.designer.cs">
+      <DependentUpon>Tipo_Vehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VARIEDAD_PIZZA.aspx.cs">
+      <DependentUpon>VARIEDAD_PIZZA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\VARIEDAD_PIZZA.aspx.designer.cs">
+      <DependentUpon>VARIEDAD_PIZZA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vehiculo.aspx.cs">
+      <DependentUpon>Vehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vehiculo.aspx.designer.cs">
+      <DependentUpon>Vehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MENU.aspx.cs">
+      <DependentUpon>MENU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\MENU.aspx.designer.cs">
+      <DependentUpon>MENU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Principal.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51252</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51252/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
